@@ -23,3 +23,4 @@ let  arrowFun2 = (a, b) => a + b;
 
 //5. The function will return the sqrt , use Math.sqrt(var);
 let  arrowFun3 = a => Math.sqrt(a);
+

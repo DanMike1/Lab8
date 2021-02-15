@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function displaySymbol() {
 
     // 1. Create an id constant that store Symbol with id debugging string 
+    const id   = Symbol('id')
     
 
 
