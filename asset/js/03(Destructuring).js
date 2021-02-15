@@ -103,13 +103,13 @@ function sum1(x1, x2, x3, x4) {
 }
 
 
-
+const arr = [1, 2, 3, 4]
 //3. Make this function to support rest, and add 5 numbers
 function sum2(x1, x2) {
 
     //4. Function that add 5 numbers [Consider Adding the arr[0], arr[1], arr[2]]
-
-    return x1 + x2;
+    result= x + y + rest[0] + rest[1]
+    return res;
 
 
 }
