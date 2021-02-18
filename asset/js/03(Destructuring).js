@@ -51,9 +51,9 @@ function objectDestructuring() {
 
 
     //1. Destructor this object to fName and sName [different naming]
-    let{ firstNames, lastNames } = { Name: "John", lName: "Smith" }
+    let{ Name, lName } = { Name: "Aria", lName: "Stark" }
     //2. Display it [Replace it with ${Name} ${lName} once you have the variables]
-    des_obj2.innerHTML = `Hi , I am ${firstNames} ${lastNames} `
+    des_obj2.innerHTML = `Hi , I am ${Name} ${lName} `
 
 
 }
@@ -63,12 +63,12 @@ function spreadSyntax() {
     //An array of Numbers to add 
     const arr = [1, 2, 3, 4]
 
-    //1. Pass the array using spread syntax
-    const result = sum1(...arr);
+    //1. Pass the array using spread syntax 
+    const results = sum1(...arr);
     
 
     //Display it 
-    spread_syntax.innerHTML = `The Sum is : ${result} `
+    spread_syntax.innerHTML = `The Sum is : ${results} `
 
 
 
@@ -76,22 +76,20 @@ function spreadSyntax() {
 
 }
 
-function restSyntax() {
+function restSyntax(x1,x2,...arr2) {
 
-    //The Numbers to add 
-    const x1 = 1;
-    const x2 = 1;
-    const x3 = 1;
-    const x4 = 1;
-    const x5 = 1;
+
 
     //Make the function to support rest so that it can add 5 numbers
-    const result = add(...arr)
-    function add(x, y, ...rest) { x + y + rest[0] + rest[1]  };
-
+    var x1 = 1
+    var x2 = 1
+    var x3 = 1
+    var x4 = 1
+    var x5 = 1
     //Display it 
+    const result = sum2(x1,x2,...arr)
+    
     rest_syntax.innerHTML = `The Sum is : ${result} `
-
 
 
 }
@@ -103,13 +101,15 @@ function sum1(x1, x2, x3, x4) {
 }
 
 
-const arr = [1, 2, 3, 4]
+// const arr2 = [1, 2, 3, 4]
 //3. Make this function to support rest, and add 5 numbers
-function sum2(x1, x2) {
+ const arr = [1, 2,3,4]
 
-    //4. Function that add 5 numbers [Consider Adding the arr[0], arr[1], arr[2]]
-    result= x + y + rest[0] + rest[1]
-    return res;
+function sum2(x1, x2, ...arr) {
 
+    //4. Function that add 5 numbers [Consider Adding the arr2[0], arr2[1], arr2[2]]
+    result= x1 + x2 + arr[0] + arr[1] + arr[2]+arr[3]
+    return result;
 
 }
+

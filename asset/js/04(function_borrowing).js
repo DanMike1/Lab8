@@ -67,3 +67,26 @@ function usingBind() {
 
 
 }
+// ES5
+
+
+function click1() {
+    recieves = 'ES5-Works'
+    var self = this;
+    Es_5.addEventListener('click', function () {
+        Es_5.innerHTML = self.recieves
+    })
+}
+click1()
+
+// ES6
+const x = {
+    recieve: 'ES6-works',
+    click2: function () {
+        Es_6.addEventListener('click', ()=> {
+            Es_6.innerHTML = this.recieve;
+        })
+    }
+}
+
+x.click2()
